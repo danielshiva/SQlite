@@ -39,6 +39,7 @@
         android:layout_alignBottom="@+id/userNameLbl"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:textSize="18sp" />
@@ -47,12 +48,13 @@
         android:id="@+id/passwordFld"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
         android:layout_alignBaseline="@+id/passwordLbl"
         android:layout_alignBottom="@+id/passwordLbl"
         android:layout_alignLeft="@+id/userNameFld"
-        android:layout_alignStart="@+id/userNameFld" />
+        android:layout_alignStart="@+id/userNameFld"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/saveBtn"
@@ -68,11 +70,13 @@
         android:id="@+id/displayBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/saveBtn"
-        android:layout_alignEnd="@+id/userNameFld"
-        android:layout_alignRight="@+id/userNameFld"
         android:onClick="displayDetails"
-        android:text="Display" />
+        android:text="Display"
+        android:layout_above="@+id/displayUserName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="33dp"
+        android:layout_marginEnd="33dp" />
 
     <TextView
         android:id="@+id/displayUserName"
