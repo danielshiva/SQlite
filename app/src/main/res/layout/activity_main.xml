@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.j6946657.sqlite.MainActivity">
+
+    <EditText
+        android:id="@+id/productsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Products Name"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="56dp"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addBtnClicked"
+        android:text="ADD"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="149dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/productsName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="deleteBtnClicked"
+        android:text="DELETE"
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="149dp"
+        android:layout_alignBaseline="@+id/addBtn"
+        android:layout_alignBottom="@+id/addBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
+
+    <TextView
+        android:id="@+id/displayProducts"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="256dp"
+        android:layout_below="@+id/addBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="82dp" />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:onClick="nextScreen"
+        android:text="Next"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

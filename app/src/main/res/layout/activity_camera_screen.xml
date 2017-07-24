@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.j6946657.sqlite.CameraScreen">
+
+    <ImageView
+        android:id="@+id/cameraImgView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <Button
+        android:id="@+id/cameraBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cameraOpen"
+        android:text="Camera"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/cameraImgView"
+        android:layout_alignLeft="@+id/cameraImgView"
+        android:layout_alignStart="@+id/cameraImgView" />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cameraBtn"
+        android:layout_alignBottom="@+id/cameraBtn"
+        android:layout_alignEnd="@+id/cameraImgView"
+        android:layout_alignRight="@+id/cameraImgView"
+        android:text="Next" />
+</RelativeLayout>
